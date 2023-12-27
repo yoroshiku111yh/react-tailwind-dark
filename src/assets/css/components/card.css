@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card__thumb{
+        @apply overflow-hidden rounded-xl
+    }
+    .card__thumb img{
+        @apply w-full h-full object-cover
+    }
+    .card__headline{
+        @apply font-fontDM text-xl font-bold text-light-neutral-1000 dark:text-dark-neutral-1000 mt-3 text-left block
+    }
+    .card__context{
+        @apply font-fontInter text-base leading-normal line-clamp-3 mt-2 text-left dark:text-dark-neutral-1000
+    }
+    .card__tag{
+        @apply font-fontInter text-sm text-light-primary-700 dark:text-dark-prmiary-700
+    }
+    .card__date{
+        @apply font-fontInter text-sm text-light-neutral-800 dark:text-dark-neutral-1000 text-left; 
+    }
+}

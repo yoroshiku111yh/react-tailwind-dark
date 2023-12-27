@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-border{
+        @apply rounded-lg border-light-primary-300 dark:border-light-primary-600 text-sm font-bold text-center px-4 py-2 text-light-primary-600 border-solid border-2 hover:bg-light-primary-600 hover:text-light-neutral-0 transition-colors
+    }
+    .btn{
+        @apply rounded-lg text-sm font-bold text-center px-4 py-2 text-light-neutral-0 bg-light-primary-600 shadow-md shadow-light-primary-600 hover:bg-light-neutral-300 hover:text-light-primary-600 hover:shadow-light-neutral-1000 transition-all
+    }
+    .card-text{
+        @apply overflow-hidden py-4 rounded-xl border-transparent border-[1px] shadow-md shadow-transparent hover:shadow-light-primary-300 hover:border-light-primary-600 transition-colors
+    }
+    .card-text__context{
+        @apply text-light-neutral-800 dark:text-dark-neutral-1000 leading-snug font-fontInter text-base
+    }
+    .headline{
+        @apply font-fontDM font-bold lg:text-[39px] text-3xl text-light-neutral-1000 dark:text-dark-neutral-1000 leading-tight
+    }
+    .headline-desc{
+        @apply font-fontInter text-base text-light-neutral-800 leading-normal mt-3 dark:text-dark-neutral-1000
+    }
+    .text-wrapper{
+        @apply shadow-md rounded-[20px] inline-block py-1 pr-3 pl-7 border-[#B6BCCD] border-[1px] font-fontInter text-light-neutral-800 dark:text-dark-neutral-800 md:text-base text-xs font-medium bg-ico-spark bg-no-repeat bg-auto bg-[4px]
+    }
+    .text-wrapper .aura-1{
+        @apply absolute w-full h-[130%] bg-white z-0 bg-[rgba(255,255,255,0.35)] top-[-99px] left-[-99px] right-[-99px] bottom-[-99px] m-auto scale-110
+    }
+    .text-wrapper .aura-circle{
+        @apply absolute w-[var(--radius)] h-[var(--radius)] top-[-99px] left-[var(--left)] bottom-[-99px] m-auto rounded-full z-0 bg-[rgba(255,255,255,0.1)]
+    }
+    .aura-circle.circle-1{
+        --radius : 90px;
+        --left : -30px;
+        @apply animate-pulse delay-100
+    }
+    .aura-circle.circle-2{
+        --radius : 179px;
+        --left : -77px;
+        @apply animate-pulse delay-75
+    }
+    .aura-circle.circle-3{
+        --radius : 255px;
+        --left : -115px;
+        @apply animate-pulse delay-0
+    }
+}
+
+.flickity-enabled:focus {
+    outline: none;
+}

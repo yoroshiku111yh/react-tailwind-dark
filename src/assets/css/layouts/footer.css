@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .footer .link {
+        @apply text-light-neutral-800 dark:text-dark-neutral-1000 font-medium text-base hover:text-light-primary-600 transition-colors
+    }
+    .footer h4{
+        @apply font-bold text-light-neutral-1000 dark:text-dark-neutral-1000 mb-3
+    }
+}
